@@ -539,6 +539,13 @@ h2 em { font-style:italic; font-weight:400; color:var(--gold); }
   overflow:hidden;
 }
 
+.book-cover img.book-cover-img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
 .book-cover-label {
   font-family:'DM Mono', monospace;
   font-size:0.5rem;
@@ -956,13 +963,13 @@ footer {
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-name">Prénom NOM</a>
+  <a href="#hero" class="nav-name">Hisseine Saleh</a>
   <ul class="nav-links">
-    <li><a href="#apropos"      data-en="About"        data-fr="À propos">À propos</a></li>
+    <li><a href="#apropos"       data-en="About"        data-fr="À propos">À propos</a></li>
     <li><a href="#bibliographie" data-en="Bibliography" data-fr="Bibliographie">Bibliographie</a></li>
-    <li><a href="#conferences"  data-en="Conferences"  data-fr="Conférences">Conférences</a></li>
-    <li><a href="#blog"         data-en="Blog"         data-fr="Blog">Blog</a></li>
-    <li><a href="#contact"      data-en="Contact"      data-fr="Contact">Contact</a></li>
+    <li><a href="#conferences"   data-en="Conferences"  data-fr="Conférences">Conférences</a></li>
+    <li><a href="#blog"          data-en="Blog"         data-fr="Blog">Blog</a></li>
+    <li><a href="#contact"       data-en="Contact"      data-fr="Contact">Contact</a></li>
   </ul>
   <div class="nav-right">
     <button id="lang-toggle" onclick="toggleLang()">EN</button>
@@ -970,20 +977,20 @@ footer {
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══════════════ HERO ═══════════════ -->
 <section id="hero">
   <div class="hero-left">
     <div class="hero-eyebrow"
-         data-en="Author · Consultant · Speaker"
-         data-fr="Auteur · Consultant · Conférencier">Auteur · Consultant · Conférencier</div>
+         data-en="Author · Cybersecurity Consultant"
+         data-fr="Auteur · Consultant en cybersécurité">Auteur · Consultant en cybersécurité</div>
     <h1 class="hero-name">
-      HISSEINE SALEH
-      <span class="hero-name-italic"></span>
+      HISSEINE
+      <span class="hero-name-italic">Saleh</span>
     </h1>
     <p class="hero-tagline"
-       data-en="&ldquo; [Your signature quote — one sentence that captures your vision, your philosophy, your commitment.] &rdquo;"
-       data-fr="« [Votre citation signature — une phrase qui résume votre vision, votre philosophie, ou votre engagement.] »">
-      « [Votre citation signature — une phrase qui résume votre vision, votre philosophie, ou votre engagement.] »
+       data-en="&ldquo; Understand before you act. Write before you speak. Build what lasts. &rdquo;"
+       data-fr="« Comprendre avant d'agir. Écrire avant de parler. Construire ce qui dure. »">
+      « Comprendre avant d'agir. Écrire avant de parler. Construire ce qui dure. »
     </p>
     <div class="hero-actions">
       <a href="#bibliographie" class="btn-gold"
@@ -1007,19 +1014,19 @@ footer {
   </div>
   <div class="hero-bottom-bar">
     <div class="hero-stat">
-      <span class="hero-stat-num">X</span>
+      <span class="hero-stat-num">2</span>
       <span class="hero-stat-label"
             data-en="Published works"
             data-fr="Ouvrages publiés">Ouvrages publiés</span>
     </div>
     <div class="hero-stat">
-      <span class="hero-stat-num">XX</span>
+      <span class="hero-stat-num">4</span>
       <span class="hero-stat-label"
-            data-en="Countries"
-            data-fr="Pays">Pays</span>
+            data-en="Languages"
+            data-fr="Langues">Langues</span>
     </div>
     <div class="hero-stat">
-      <span class="hero-stat-num">XX</span>
+      <span class="hero-stat-num">12</span>
       <span class="hero-stat-label"
             data-en="Years of expertise"
             data-fr="Ans d'expertise">Ans d'expertise</span>
@@ -1027,14 +1034,14 @@ footer {
   </div>
 </section>
 
-<!-- À PROPOS -->
+<!-- ═══════════════ À PROPOS ═══════════════ -->
 <section id="apropos">
   <div class="apropos-left reveal">
     <div class="apropos-portrait"></div>
     <div class="apropos-quote"
-         data-en="[A powerful quote — a thought that defines you.]"
-         data-fr="[Une autre citation forte — une pensée qui vous définit.]">
-      [Une autre citation forte — une pensée qui vous définit.]
+         data-en="A book opened at the right moment can alter the trajectory of a life."
+         data-fr="Un livre ouvert au bon moment peut changer la trajectoire d'une vie.">
+      Un livre ouvert au bon moment peut changer la trajectoire d'une vie.
     </div>
   </div>
   <div class="apropos-text">
@@ -1047,68 +1054,72 @@ footer {
       Un parcours <em>singulier,</em><br>une voix propre
     </h2>
     <p class="apropos-intro reveal"
-       data-en="[Your biographical hook — 1 or 2 strong sentences that capture who you are and what sets you apart.]"
-       data-fr="[Votre accroche biographique — 1 ou 2 phrases fortes qui capturent qui vous êtes et ce qui vous distingue.]">
-      [Votre accroche biographique — 1 ou 2 phrases fortes qui capturent qui vous êtes et ce qui vous distingue.]
+       data-en="Twelve years building complex systems. Published author. Cybersecurity consultant. One guiding principle: understand deeply before you act."
+       data-fr="Douze ans à bâtir des systèmes complexes. Auteur publié. Consultant en cybersécurité. Une seule ligne directrice : comprendre en profondeur avant d'agir.">
+      Douze ans à bâtir des systèmes complexes. Auteur publié. Consultant en cybersécurité. Une seule ligne directrice : comprendre en profondeur avant d'agir.
     </p>
     <p class="apropos-body reveal"
-       data-en="[First biographical paragraph: your origins, training, the key milestones that shaped your thinking and commitment. Write in first or third person, as you prefer.]"
-       data-fr="[Premier paragraphe biographique : vos origines, votre formation, les grandes étapes qui ont forgé votre pensée et votre engagement. Écrivez à la première ou troisième personne, selon votre préférence.]">
-      [Premier paragraphe biographique : vos origines, votre formation, les grandes étapes qui ont forgé votre pensée et votre engagement.]
+       data-en="Born of a journey that crosses Africa, the Middle East, and Latin America, Hisseine Saleh has forged a perspective at the intersection of several worlds. Multilingual — French, English, Arabic, Spanish — he carries the nuances of cultures that few know how to read together. This ability to navigate between the lines, to grasp what others miss, fuels both his writing and his professional work."
+       data-fr="Né d'un parcours qui traverse l'Afrique, le Moyen-Orient et l'Amérique latine, Hisseine Saleh a forgé une pensée à l'intersection de plusieurs mondes. Multilingue — français, anglais, arabe, espagnol — il porte en lui les nuances de cultures que peu savent lire ensemble. Cette capacité à naviguer entre les lignes, à saisir ce que d'autres ne voient pas, nourrit autant son écriture que son travail.">
+      Né d'un parcours qui traverse l'Afrique, le Moyen-Orient et l'Amérique latine, Hisseine Saleh a forgé une pensée à l'intersection de plusieurs mondes. Multilingue — français, anglais, arabe, espagnol — il porte en lui les nuances de cultures que peu savent lire ensemble. Cette capacité à naviguer entre les lignes, à saisir ce que d'autres ne voient pas, nourrit autant son écriture que son travail.
     </p>
     <p class="apropos-body reveal"
-       data-en="[Second paragraph: your professional and intellectual journey, important transitions, major influences, what makes your body of work coherent across the years.]"
-       data-fr="[Deuxième paragraphe : votre trajectoire professionnelle et intellectuelle, les transitions importantes, les influences majeures, ce qui fait la cohérence de votre travail à travers les années.]">
-      [Deuxième paragraphe : votre trajectoire professionnelle et intellectuelle, les transitions importantes, les influences majeures.]
+       data-en="After more than a decade in finance, administration, and complex project management — leading cross-functional teams and operating in high-stakes environments across multiple continents — he made a deliberate transition into cybersecurity. Not a break, but a natural evolution: the rigor, attention to detail, and resilience built in the field become the foundation of a new expertise. The discipline of understanding systems completely before acting on them — forged over years managing critical operations — now defines his approach to digital security."
+       data-fr="Après plus d'une décennie dans la finance, l'administration et le management de projets complexes — dirigeant des équipes pluridisciplinaires et opérant dans des environnements à enjeux élevés sur plusieurs continents — il opère une transition délibérée vers la cybersécurité. Non pas une rupture, mais une évolution naturelle : la rigueur, l'attention au détail et la résilience acquises sur le terrain deviennent les fondements d'une nouvelle expertise. La discipline de comprendre les systèmes entièrement avant d'agir — forgée au fil des années à gérer des opérations critiques — définit désormais son approche de la sécurité numérique.">
+      Après plus d'une décennie dans la finance, l'administration et le management de projets complexes — dirigeant des équipes pluridisciplinaires et opérant dans des environnements à enjeux élevés sur plusieurs continents — il opère une transition délibérée vers la cybersécurité. Non pas une rupture, mais une évolution naturelle : la rigueur, l'attention au détail et la résilience acquises sur le terrain deviennent les fondements d'une nouvelle expertise.
     </p>
     <p class="apropos-body reveal"
-       data-en="[Third paragraph: your current position, present commitments, what you are working on, what drives you today.]"
-       data-fr="[Troisième paragraphe : votre positionnement actuel, vos engagements présents, ce sur quoi vous travaillez, ce qui vous anime aujourd'hui.]">
-      [Troisième paragraphe : votre positionnement actuel, vos engagements présents, ce sur quoi vous travaillez.]
+       data-en="Author of two published works, he continues a literary body of work that explores the stories History forgets, and the individuals that grand narratives erase. What he seeks everywhere — at a terminal, in a boardroom, or on a blank page — is the same thing: to understand a system completely, then act with intention."
+       data-fr="Auteur de deux ouvrages publiés, il poursuit une œuvre littéraire qui explore les histoires que l'Histoire oublie, et les individus que les grandes narrations effacent. Ce qu'il cherche partout — dans un terminal, dans une salle de réunion ou sur une page blanche — c'est la même chose : comprendre un système entièrement, puis agir avec intention.">
+      Auteur de deux ouvrages publiés, il poursuit une œuvre littéraire qui explore les histoires que l'Histoire oublie, et les individus que les grandes narrations effacent. Ce qu'il cherche partout — dans un terminal, dans une salle de réunion ou sur une page blanche — c'est la même chose : comprendre un système entièrement, puis agir avec intention.
     </p>
 
     <div class="timeline reveal">
       <div class="timeline-item">
-        <div class="timeline-year">20XX</div>
+        <div class="timeline-year">2012</div>
         <div class="timeline-content">
-          <h4 data-en="Key milestone or achievement"
-              data-fr="Étape ou réalisation majeure">Étape ou réalisation majeure</h4>
-          <p data-en="Brief description of the event or turning point in your journey."
-             data-fr="Description brève de l'événement ou du tournant dans votre parcours.">Description brève de l'événement ou du tournant dans votre parcours.</p>
+          <h4 data-en="Beginning of an international career"
+              data-fr="Début d'un parcours international">Début d'un parcours international</h4>
+          <p data-en="Immersion in the worlds of finance, administration and project management across multiple countries — Africa, the Middle East, Latin America."
+             data-fr="Immersion dans les mondes de la finance, de l'administration et du management de projets à travers plusieurs pays — Afrique, Moyen-Orient, Amérique latine.">
+            Immersion dans les mondes de la finance, de l'administration et du management de projets à travers plusieurs pays — Afrique, Moyen-Orient, Amérique latine.</p>
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-year">20XX</div>
-        <div class="timeline-content">
-          <h4 data-en="Key milestone or achievement"
-              data-fr="Étape ou réalisation majeure">Étape ou réalisation majeure</h4>
-          <p data-en="Brief description of the event or turning point in your journey."
-             data-fr="Description brève de l'événement ou du tournant dans votre parcours.">Description brève de l'événement ou du tournant dans votre parcours.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-year">20XX</div>
-        <div class="timeline-content">
-          <h4 data-en="Key milestone or achievement"
-              data-fr="Étape ou réalisation majeure">Étape ou réalisation majeure</h4>
-          <p data-en="Brief description of the event or turning point in your journey."
-             data-fr="Description brève de l'événement ou du tournant dans votre parcours.">Description brève de l'événement ou du tournant dans votre parcours.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-year">20XX</div>
+        <div class="timeline-year">2022</div>
         <div class="timeline-content">
           <h4 data-en="First publication"
               data-fr="Première publication">Première publication</h4>
-          <p data-en="Release of your first work — title, publisher, context."
-             data-fr="Parution de votre premier ouvrage — titre, maison d'édition, contexte.">Parution de votre premier ouvrage — titre, maison d'édition, contexte.</p>
+          <p data-en="Release of Essential Function in Dubai — a work at the intersection of personal experience and universal reflection on opportunity and resilience."
+             data-fr="Parution de Essential Function in Dubai — une œuvre à l'intersection de l'expérience personnelle et de la réflexion universelle sur l'opportunité et la résilience.">
+            Parution de <em>Essential Function in Dubai</em> — une œuvre à l'intersection de l'expérience personnelle et de la réflexion universelle sur l'opportunité et la résilience.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">
+          <h4 data-en="Deliberate pivot into cybersecurity"
+              data-fr="Pivot délibéré vers la cybersécurité">Pivot délibéré vers la cybersécurité</h4>
+          <p data-en="A strategic evolution — bringing twelve years of operational rigor into digital security, focused on SOC operations, incident response, and threat intelligence."
+             data-fr="Une évolution stratégique — apporter douze ans de rigueur opérationnelle dans la sécurité numérique, avec un focus sur les opérations SOC, la réponse aux incidents et l'intelligence des menaces.">
+            Une évolution stratégique — apporter douze ans de rigueur opérationnelle dans la sécurité numérique, avec un focus sur les opérations SOC, la réponse aux incidents et l'intelligence des menaces.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-content">
+          <h4 data-en="Second publication &amp; consulting launch"
+              data-fr="Deuxième publication &amp; lancement du cabinet">Deuxième publication &amp; lancement du cabinet</h4>
+          <p data-en="Release of Les invisibles de Dabbirine, and the founding of a cybersecurity consulting firm serving francophone African executives and organisations."
+             data-fr="Parution de Les invisibles de Dabbirine, et création d'un cabinet de conseil en cybersécurité au service des dirigeants et organisations d'Afrique francophone.">
+            Parution de <em>Les invisibles de Dabbirine</em>, et création d'un cabinet de conseil en cybersécurité au service des dirigeants et organisations d'Afrique francophone.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BIBLIOGRAPHIE -->
+<!-- ═══════════════ BIBLIOGRAPHIE ═══════════════ -->
 <section id="bibliographie">
   <div class="biblio-header reveal">
     <div>
@@ -1118,29 +1129,35 @@ footer {
       <h2 data-en="Bibliography"
           data-fr="Bibliographie">Bibliographie</h2>
     </div>
-    <p data-en="A body of work built over the years, spanning genres and disciplines — essays, narratives, analyses — driven by the same commitment to intellectual honesty and clarity."
-       data-fr="Une œuvre construite au fil des années, traversant les genres et les disciplines — essais, récits, analyses — portée par une même exigence d'honnêteté intellectuelle et de clarté.">
-      Une œuvre construite au fil des années, traversant les genres et les disciplines — essais, récits, analyses — portée par une même exigence d'honnêteté intellectuelle et de clarté.
+    <p data-en="Two published works across two languages — each exploring what the grand narratives of our time tend to leave out: the individual, the invisible, the determined."
+       data-fr="Deux ouvrages publiés, dans deux langues — chacun explorant ce que les grandes narrations de notre époque tendent à omettre : l'individu, l'invisible, le déterminé.">
+      Deux ouvrages publiés, dans deux langues — chacun explorant ce que les grandes narrations de notre époque tendent à omettre : l'individu, l'invisible, le déterminé.
     </p>
   </div>
   <div class="books-grid">
-   <div class="book-cover">
-  <img src="/images/PHOTO DU SITE 2.jpg" alt="Couverture du livre" class="book-cover-img">
 
-  <span class="book-cover-num">01</span>
-</div>
+    <!-- Livre 1 -->
+    <div class="book-card reveal">
+      <div class="book-cover">
+        <img src="/images/PHOTO DU SITE 2.jpg" alt="Essential Function in Dubai" class="book-cover-img">
+        <span class="book-cover-num">01</span>
       </div>
-      <div class="book-year">2022 · Éditeur</div>
+      <div class="book-year"
+           data-en="2022 · Draft2Digital / Amazon"
+           data-fr="2022 · Draft2Digital / Amazon">2022 · Draft2Digital / Amazon</div>
       <div class="book-title"
-           data-en="Essential Funtion in Dubai"
-           data-fr="Essential Funtion in Dubai">Essential Function in Dubai</div>
+           data-en="Essential Function in Dubai"
+           data-fr="Essential Function in Dubai">Essential Function in Dubai</div>
       <div class="book-subtitle"
-           data-en="How to see opportunities and learnings in all circumstancies"
-           data-fr="Sous-titre ou description courte de l'ouvrage et de ses thèmes principaux.">Sous-titre ou description courte de l'ouvrage et de ses thèmes principaux.</div>
+           data-en="How to see opportunities and lessons in every circumstance — a reflection on resilience, adaptation, and the mindset that turns constraints into leverage."
+           data-fr="Comment voir des opportunités et des apprentissages dans toutes les circonstances — une réflexion sur la résilience, l'adaptation et l'état d'esprit qui transforme les contraintes en levier.">
+        Comment voir des opportunités et des apprentissages dans toutes les circonstances.</div>
       <span class="book-genre"
             data-en="Essay"
             data-fr="Essai">Essai</span>
     </div>
+
+    <!-- Livre 2 -->
     <div class="book-card reveal">
       <div class="book-cover">
         <span class="book-cover-label"
@@ -1148,39 +1165,48 @@ footer {
               data-fr="Couverture">Couverture</span>
         <span class="book-cover-num">02</span>
       </div>
-      <div class="book-year">2025 · Éditeur</div>
+      <div class="book-year"
+           data-en="2025 · Draft2Digital / Amazon"
+           data-fr="2025 · Draft2Digital / Amazon">2025 · Draft2Digital / Amazon</div>
       <div class="book-title"
-           data-en="Book title"
+           data-en="Les invisibles de Dabbirine"
            data-fr="Les invisibles de Dabbirine">Les invisibles de Dabbirine</div>
       <div class="book-subtitle"
-           data-en="Subtitle or brief description of the work and its main themes."
-           data-fr="">.</div>
+           data-en="Those whom great stories forget — the silent ones, the invisible ones, those whose lives deserve to be told."
+           data-fr="Ceux que les grandes histoires oublient — les silencieux, les invisibles, ceux dont la vie mérite pourtant d'être racontée.">
+        Ceux que les grandes histoires oublient — les silencieux, les invisibles, ceux dont la vie mérite d'être racontée.</div>
       <span class="book-genre"
             data-en="Novel"
             data-fr="Roman">Roman</span>
     </div>
+
+    <!-- Livre 3 — À venir -->
     <div class="book-card reveal">
       <div class="book-cover">
         <span class="book-cover-label"
-              data-en="Cover"
-              data-fr="Couverture">Couverture</span>
+              data-en="Coming soon"
+              data-fr="À paraître">À paraître</span>
         <span class="book-cover-num">03</span>
       </div>
-      <div class="book-year">2022 · Éditeur</div>
-      <div class="Les invisibles de Dabbirine"
-           data-en="Les invisibles de Dabbirine"
-           data-fr=""></div>
+      <div class="book-year"
+           data-en="In progress"
+           data-fr="En cours">En cours</div>
+      <div class="book-title"
+           data-en="Next title"
+           data-fr="Prochain titre">Prochain titre</div>
       <div class="book-subtitle"
-           data-en="Subtitle or brief description of the work and its main themes."
-           data-fr=""></div>
+           data-en="More titles are in progress. The work continues."
+           data-fr="D'autres titres sont en cours. L'œuvre continue.">
+        D'autres titres sont en cours. L'œuvre continue.</div>
       <span class="book-genre"
-            data-en="Research"
-            data-fr="Recherche">Recherche</span>
+            data-en="In progress"
+            data-fr="En préparation">En préparation</span>
     </div>
+
   </div>
 </section>
 
-<!-- CONFÉRENCES -->
+<!-- ═══════════════ CONFÉRENCES ═══════════════ -->
 <section id="conferences">
   <div class="section-label reveal"
        data-en="Talks"
@@ -1191,98 +1217,74 @@ footer {
   <div class="conf-grid reveal">
     <div class="conf-item">
       <div class="conf-date">
-        <span class="conf-month"
-              data-en="Month"
-              data-fr="Mois">Mois</span>
+        <span class="conf-month" data-en="Month" data-fr="Mois">Mois</span>
         <span class="conf-year">20XX</span>
       </div>
       <div class="conf-body">
-        <h4 data-en="Conference or talk title"
-            data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
-        <p data-en="Brief description of the topic and the context of the invitation."
-           data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
+        <h4 data-en="Conference or talk title" data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
+        <p data-en="Brief description of the topic and the context of the invitation." data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
         <span class="conf-location">📍 Ville, Pays</span>
       </div>
     </div>
     <div class="conf-item">
       <div class="conf-date">
-        <span class="conf-month"
-              data-en="Month"
-              data-fr="Mois">Mois</span>
+        <span class="conf-month" data-en="Month" data-fr="Mois">Mois</span>
         <span class="conf-year">20XX</span>
       </div>
       <div class="conf-body">
-        <h4 data-en="Conference or talk title"
-            data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
-        <p data-en="Brief description of the topic and the context of the invitation."
-           data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
+        <h4 data-en="Conference or talk title" data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
+        <p data-en="Brief description of the topic and the context of the invitation." data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
         <span class="conf-location">📍 Ville, Pays</span>
       </div>
     </div>
     <div class="conf-item">
       <div class="conf-date">
-        <span class="conf-month"
-              data-en="Month"
-              data-fr="Mois">Mois</span>
+        <span class="conf-month" data-en="Month" data-fr="Mois">Mois</span>
         <span class="conf-year">20XX</span>
       </div>
       <div class="conf-body">
-        <h4 data-en="Conference or talk title"
-            data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
-        <p data-en="Brief description of the topic and the context of the invitation."
-           data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
+        <h4 data-en="Conference or talk title" data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
+        <p data-en="Brief description of the topic and the context of the invitation." data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
         <span class="conf-location">📍 Ville, Pays</span>
       </div>
     </div>
     <div class="conf-item">
       <div class="conf-date">
-        <span class="conf-month"
-              data-en="Month"
-              data-fr="Mois">Mois</span>
+        <span class="conf-month" data-en="Month" data-fr="Mois">Mois</span>
         <span class="conf-year">20XX</span>
       </div>
       <div class="conf-body">
-        <h4 data-en="Conference or talk title"
-            data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
-        <p data-en="Brief description of the topic and the context of the invitation."
-           data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
+        <h4 data-en="Conference or talk title" data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
+        <p data-en="Brief description of the topic and the context of the invitation." data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
         <span class="conf-location">📍 Ville, Pays</span>
       </div>
     </div>
     <div class="conf-item">
       <div class="conf-date">
-        <span class="conf-month"
-              data-en="Month"
-              data-fr="Mois">Mois</span>
+        <span class="conf-month" data-en="Month" data-fr="Mois">Mois</span>
         <span class="conf-year">20XX</span>
       </div>
       <div class="conf-body">
-        <h4 data-en="Conference or talk title"
-            data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
-        <p data-en="Brief description of the topic and the context of the invitation."
-           data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
+        <h4 data-en="Conference or talk title" data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
+        <p data-en="Brief description of the topic and the context of the invitation." data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
         <span class="conf-location">📍 Ville, Pays</span>
       </div>
     </div>
     <div class="conf-item">
       <div class="conf-date">
-        <span class="conf-month"
-              data-en="Month"
-              data-fr="Mois">Mois</span>
+        <span class="conf-month" data-en="Month" data-fr="Mois">Mois</span>
         <span class="conf-year">20XX</span>
       </div>
       <div class="conf-body">
-        <h4 data-en="Conference or talk title"
-            data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
-        <p data-en="Brief description of the topic and the context of the invitation."
-           data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
+        <h4 data-en="Conference or talk title" data-fr="Titre de la conférence ou de l'intervention">Titre de la conférence ou de l'intervention</h4>
+        <p data-en="Brief description of the topic and the context of the invitation." data-fr="Description brève du sujet traité et du contexte de l'invitation.">Description brève du sujet traité et du contexte de l'invitation.</p>
         <span class="conf-location">📍 Ville, Pays</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BLOG -->
+<!-- ═══════════════ BLOG ═══════════════ -->
 <section id="blog">
   <div class="blog-header reveal">
     <div>
@@ -1292,53 +1294,39 @@ footer {
       <h2 data-en-html="Blog <em>&amp; articles</em>"
           data-fr-html="Blog <em>&amp; articles</em>">Blog <em>&amp; articles</em></h2>
     </div>
-    </a>
+    <a href="#" class="blog-more"
+       data-en="All articles"
+       data-fr="Tous les articles">Tous les articles</a>
+  </div>
+  <div class="articles-list">
     <a href="#" class="article-item reveal">
-      <div class="article-date"
-           data-en="MAR 20XX"
-           data-fr="MAR 20XX">MAR 20XX</div>
+      <div class="article-date" data-en="MAR 20XX" data-fr="MAR 20XX">MAR 20XX</div>
       <div class="article-body">
-        <div class="article-cat"
-             data-en="Analysis · Politics"
-             data-fr="Analyse · Politique">Analyse · Politique</div>
-        <div class="article-title"
-             data-en="Title of your third reflection or analysis"
-             data-fr="Titre de votre troisième réflexion ou analyse">Titre de votre troisième réflexion ou analyse</div>
+        <div class="article-cat" data-en="Analysis · Politics" data-fr="Analyse · Politique">Analyse · Politique</div>
+        <div class="article-title" data-en="Title of your third reflection or analysis" data-fr="Titre de votre troisième réflexion ou analyse">Titre de votre troisième réflexion ou analyse</div>
       </div>
       <div class="article-arrow">→</div>
     </a>
     <a href="#" class="article-item reveal">
-      <div class="article-date"
-           data-en="APR 20XX"
-           data-fr="AVR 20XX">AVR 20XX</div>
+      <div class="article-date" data-en="APR 20XX" data-fr="AVR 20XX">AVR 20XX</div>
       <div class="article-body">
-        <div class="article-cat"
-             data-en="Chronicle · Society"
-             data-fr="Chronique · Société">Chronique · Société</div>
-        <div class="article-title"
-             data-en="Title of your fourth article or chronicle"
-             data-fr="Titre de votre quatrième article ou chronique">Titre de votre quatrième article ou chronique</div>
+        <div class="article-cat" data-en="Chronicle · Society" data-fr="Chronique · Société">Chronique · Société</div>
+        <div class="article-title" data-en="Title of your fourth article or chronicle" data-fr="Titre de votre quatrième article ou chronique">Titre de votre quatrième article ou chronique</div>
       </div>
       <div class="article-arrow">→</div>
     </a>
     <a href="#" class="article-item reveal">
-      <div class="article-date"
-           data-en="MAY 20XX"
-           data-fr="MAI 20XX">MAI 20XX</div>
+      <div class="article-date" data-en="MAY 20XX" data-fr="MAI 20XX">MAI 20XX</div>
       <div class="article-body">
-        <div class="article-cat"
-             data-en="Essay · Technology"
-             data-fr="Essai · Technologie">Essai · Technologie</div>
-        <div class="article-title"
-             data-en="Title of your fifth article or essay"
-             data-fr="Titre de votre cinquième article ou essai">Titre de votre cinquième article ou essai</div>
+        <div class="article-cat" data-en="Essay · Technology" data-fr="Essai · Technologie">Essai · Technologie</div>
+        <div class="article-title" data-en="Title of your fifth article or essay" data-fr="Titre de votre cinquième article ou essai">Titre de votre cinquième article ou essai</div>
       </div>
       <div class="article-arrow">→</div>
     </a>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ═══════════════ CONTACT ═══════════════ -->
 <section id="contact">
   <div class="contact-left">
     <div class="section-label reveal"
@@ -1348,37 +1336,31 @@ footer {
         data-en-html="Let's start a <em>conversation</em>"
         data-fr-html="Entrons en <em>conversation</em>">Entrons en <em>conversation</em></h2>
     <p class="reveal"
-       data-en="For any interview request, speaking engagement, editorial collaboration, or simply to exchange ideas that bring us together."
-       data-fr="Pour toute demande d'interview, d'intervention, de collaboration éditoriale ou simplement pour échanger sur des idées qui nous réunissent.">
-      Pour toute demande d'interview, d'intervention, de collaboration éditoriale ou simplement pour échanger sur des idées qui nous réunissent.
+       data-en="For any interview request, speaking engagement, editorial collaboration — or simply to exchange ideas that bring us together."
+       data-fr="Pour toute demande d'interview, d'intervention, de collaboration éditoriale — ou simplement pour échanger sur des idées qui nous réunissent.">
+      Pour toute demande d'interview, d'intervention, de collaboration éditoriale — ou simplement pour échanger sur des idées qui nous réunissent.
     </p>
     <div class="contact-info reveal">
       <div class="contact-info-item">
-        <span class="contact-info-label"
-              data-en="Email"
-              data-fr="Email">Email</span>
+        <span class="contact-info-label" data-en="Email" data-fr="Email">Email</span>
         <span class="contact-info-value">votre@email.com</span>
       </div>
       <div class="contact-info-item">
-        <span class="contact-info-label"
-              data-en="Based in"
-              data-fr="Basé à">Basé à</span>
+        <span class="contact-info-label" data-en="Based in" data-fr="Basé à">Basé à</span>
         <span class="contact-info-value"
               data-en="Mexico · Francophone Africa"
-              data-fr="Ville">Mexico · Afrique francophone</span>
+              data-fr="Mexico · Afrique francophone">Mexico · Afrique francophone</span>
       </div>
       <div class="contact-info-item">
-        <span class="contact-info-label"
-              data-en="Languages"
-              data-fr="Langues">Langues</span>
+        <span class="contact-info-label" data-en="Languages" data-fr="Langues">Langues</span>
         <span class="contact-info-value"
-              data-en="French · English · Spanish"
-              data-fr="Français · Anglais · Espagnol">Français · Anglais · Espagnol</span>
+              data-en="French · English · Arabic · Spanish"
+              data-fr="Français · Anglais · Arabe · Espagnol">Français · Anglais · Arabe · Espagnol</span>
       </div>
     </div>
     <div class="contact-social reveal">
       <a href="#" class="social-btn">LinkedIn</a>
-      <a href="#" class="social-btn">Twitter / X</a>
+      <a href="#" class="social-btn">Amazon</a>
       <a href="#" class="social-btn">Goodreads</a>
     </div>
   </div>
@@ -1388,15 +1370,15 @@ footer {
         <label data-en="Name" data-fr="Nom">Nom</label>
         <input type="text"
                data-en-placeholder="John Smith"
-               data-fr-placeholder="Jean Dupont"
-               placeholder="Jean Dupont">
+               data-fr-placeholder="Prénom Nom"
+               placeholder="Prénom Nom">
       </div>
       <div class="form-field">
         <label data-en="Email" data-fr="Email">Email</label>
         <input type="email"
                data-en-placeholder="john@email.com"
-               data-fr-placeholder="jean@email.com"
-               placeholder="jean@email.com">
+               data-fr-placeholder="vous@email.com"
+               placeholder="vous@email.com">
       </div>
     </div>
     <div class="form-field">
@@ -1405,16 +1387,12 @@ footer {
         <option value="" disabled selected
                 data-en="Select"
                 data-fr="Sélectionner">Sélectionner</option>
-        <option data-en="Interview / Press"
-                data-fr="Interview / Presse">Interview / Presse</option>
-        <option data-en="Conference invitation"
-                data-fr="Invitation à conférence">Invitation à conférence</option>
-        <option data-en="Editorial collaboration"
-                data-fr="Collaboration éditoriale">Collaboration éditoriale</option>
-        <option data-en="Translation rights"
-                data-fr="Droits de traduction">Droits de traduction</option>
-        <option data-en="Other"
-                data-fr="Autre">Autre</option>
+        <option data-en="Interview / Press"      data-fr="Interview / Presse">Interview / Presse</option>
+        <option data-en="Conference invitation"  data-fr="Invitation à conférence">Invitation à conférence</option>
+        <option data-en="Editorial collaboration" data-fr="Collaboration éditoriale">Collaboration éditoriale</option>
+        <option data-en="Translation rights"     data-fr="Droits de traduction">Droits de traduction</option>
+        <option data-en="Cybersecurity consulting" data-fr="Conseil en cybersécurité">Conseil en cybersécurité</option>
+        <option data-en="Other"                  data-fr="Autre">Autre</option>
       </select>
     </div>
     <div class="form-field">
@@ -1429,7 +1407,7 @@ footer {
   </form>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
   <div class="footer-name">Hisseine Saleh</div>
   <ul class="footer-links">
@@ -1474,40 +1452,26 @@ footer {
 
   /* ─── I18N SYSTEM ─── */
   function setLang(lang) {
-    /* plain text nodes */
     document.querySelectorAll('[data-en]').forEach(el => {
       el.textContent = el.dataset[lang];
     });
-
-    /* nodes that contain HTML tags (em, br...) */
     document.querySelectorAll('[data-en-html]').forEach(el => {
       el.innerHTML = lang === 'en' ? el.dataset.enHtml : el.dataset.frHtml;
     });
-
-    /* input / textarea placeholders */
     document.querySelectorAll('[data-en-placeholder]').forEach(el => {
       el.placeholder = lang === 'en' ? el.dataset.enPlaceholder : el.dataset.frPlaceholder;
     });
-
-    /* select options */
     document.querySelectorAll('select option[data-en]').forEach(opt => {
       opt.textContent = opt.dataset[lang];
     });
-
-    /* page title & meta */
     document.title = lang === 'en'
-      ? 'Hisseine Saleh — Author & Consultant'
-      : 'Hisseine Saleh — Auteur & Consultant';
+      ? 'Hisseine Saleh — Author & Cybersecurity Consultant'
+      : 'Hisseine Saleh — Auteur & Consultant en cybersécurité';
     document.querySelector('meta[name="description"]').content = lang === 'en'
-      ? 'Author, consultant. Publications, biography and speaking engagements.'
-      : 'Auteur, consultant. Publications, biographie et interventions.';
-
-    /* html lang attribute */
+      ? 'Author, cybersecurity consultant. Publications, biography and speaking engagements.'
+      : 'Auteur, consultant en cybersécurité. Publications, biographie et interventions.';
     document.documentElement.lang = lang;
-
-    /* toggle button label: shows the OTHER language */
     document.getElementById('lang-toggle').textContent = lang === 'en' ? 'FR' : 'EN';
-
     localStorage.setItem('lang', lang);
   }
 
@@ -1516,7 +1480,6 @@ footer {
     setLang(current === 'fr' ? 'en' : 'fr');
   }
 
-  /* ─── INIT: saved preference → browser language → default FR ─── */
   (function init() {
     const saved   = localStorage.getItem('lang');
     const browser = navigator.language.startsWith('en') ? 'en' : 'fr';
